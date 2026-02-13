@@ -10,7 +10,7 @@ const app = express()
 // Home route - HTML
 app.use(express.json());
 app.post('/card_hook', (req, res) => {
-  console.log(req.body);
+  console.error(req.body);
   res.json({ status: "success" });
 })
 
